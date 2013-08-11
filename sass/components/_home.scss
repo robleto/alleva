@@ -1,0 +1,241 @@
+//
+// HOME PAGE WIDGETS
+//
+//--------------------------------------------------
+// { Mobile First }
+
+
+.textwidget {
+	line-height: 130%;
+	font-size: 16px;
+}
+
+
+// Home Page Alerts
+#home-page-alerts {
+	border-bottom: 3px double #EDEDED;
+    border-top: 3px double #EDEDED;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+
+// Home Page Promo
+#home-page-promo {
+	background-color: #89ae47;
+	border: solid 1px #EEEEEE;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	margin-bottom: 20px;
+	overflow: hidden;
+	h2 {
+		color: #FFFFFF;
+	    display: inline-block;
+		font-family: $slab-serif;
+		font-size: 24px;
+	    font-weight: normal;
+	    line-height: 32px;
+	    margin-left: 10px;
+	    margin-top: 10px;
+	    text-transform: capitalize;
+	    width: 100%;
+	}
+	h4 {
+		color: #597527;
+	    display: inline-block;
+		font-family: $sans-serif;
+	    font-weight: normal;
+	    margin-top: 10px;
+	    margin-left: 10px;
+	    margin-bottom: 10px;
+		text-decoration: underline;
+	}
+	h2:hover, h2:active,
+	h4:hover, h4:active,
+	a:hover, a:active {
+		text-decoration: underline;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+
+// Home Page Three-Up
+#home-page-three-up  {
+	margin-bottom: 20px;
+}
+#home-page-three-up aside {
+	background-color: #FFFFFF;
+	border: solid 1px #EEEEEE;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+    margin-bottom: 20px;
+	overflow: hidden;
+	padding: 3px 10px;
+    width: auto;
+	a, a:link, a:visited {
+		text-decoration: none;
+		color: #888888;
+	    cursor: pointer;
+	    font-family: Open Sans;
+	    font-size: 14px;
+	    text-decoration: none;
+	}
+	a:hover, a:active {
+		text-decoration: underline;
+	}
+    h3 {
+		font-family: $sans-serif;
+		font-weight: normal;
+		text-decoration: none;
+    }
+
+	img {
+		max-height:480px;
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
+
+// Home Page Blog Loop
+.home-loop {
+    width: auto;
+	background-color: #FFFFFF;
+	border: solid 1px #EEEEEE;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	padding: 3px 10px;
+	margin-bottom: 20px;
+	a, a:link, a:visited {
+		text-decoration: none;
+	}
+	a:hover, a:active {
+		text-decoration: underline;
+	}
+    h3 {
+		font-family: $sans-serif;
+		font-weight: normal;
+		text-decoration: none;
+    }
+}
+.homepage-excerpt {
+	border-bottom: solid 1px #dddddd;
+	padding: 15px 0px;
+	h3 {
+		font-family: $slab-serif;
+		font-weight: normal;
+		text-decoration: none;
+	    font-size: 120%;
+	    line-height: 130%;
+	}
+	p, li, blockquote {
+		font-family: $sans-serif;
+		font-style: normal;
+		font-size: 80%;
+		color: #888888;
+    	line-height: 18px;
+		a {
+			color: #888888;
+		}
+	} 
+}
+
+// Home Page Gifts
+#home-page-blog-gifts  {
+	margin-bottom: 20px;
+}
+#home-page-blog-gifts aside {
+	background-color: #FFFFFF;
+	border: solid 1px #EEEEEE;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	overflow: hidden;
+	padding: 3px 10px;
+    width: 100%;
+	a, a:link, a:visited {
+		text-decoration: none;
+	}
+	a:hover, a:active {
+		text-decoration: underline;
+	}
+    h3 {
+		font-family: $sans-serif;
+		font-weight: normal;
+		text-decoration: none;
+    }
+
+	img {
+		max-height:200px;
+		width: 100%;
+		overflow: hidden;
+	}
+}	
+.gift-card-link {
+		background: url("../images/icon_giftcert.png") no-repeat scroll 0 0 white;
+	    color: #6B0A0A;
+	    font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+	    font-weight: normal;
+	    height: 50px;
+	    margin-top: 10px;
+	    padding-left: 80px;
+	    padding-top: 10px;
+	    text-decoration: none;
+	a:hover, a:active {
+		text-decoration: underline;
+	}
+} 
+
+
+
+
+
+//
+// Responsive States - Desktop
+//--------------------------------------------------
+@media only screen and (min-width: 600px) {
+
+	// Home Page Promo
+	#home-page-promo {
+		max-height: 300px;
+		h2 {
+		    width: 33%;
+			font-size: 32px;
+		    line-height: 48px;
+		    margin-top: 50px;
+		    margin-left: 20px;
+		}
+		h4 {
+		    margin-top: 12px;
+		    margin-left: 20px;
+		}
+		img {
+			float: left;
+			max-width: 60%;
+			height: 100%;
+			overflow: hidden;
+			margin-top: -50px;
+		}
+	}
+
+	// Home Page Three-Up
+	#home-page-three-up aside {
+		height: 320px;
+	    margin-right: 1.3333%;
+	    width: 30%;
+	}
+
+	// Home Page Blog Loop
+	.home-loop {
+	    margin-right: 1.3333%;
+	    width: 63.66%;
+	}
+
+	// Home Page Gifts
+	#home-page-blog-gifts aside {
+		height: 350px;
+	    margin-right: 1.3333%;
+	} 
+
+}//end repsonsive min-480px
+
+

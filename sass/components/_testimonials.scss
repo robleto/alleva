@@ -1,0 +1,78 @@
+
+
+
+/* Testimoinals on Pages Sidebars */
+.front_end_data {
+  position: relative;
+}
+
+.big_quote_marks {
+  color: #afb6bf;
+  display: block;
+  font-family: $serif;
+  font-size: 400%;
+  font-style: normal; 
+}
+.testimonials-widget-testimonials blockquote {
+  background-image: none;
+  color: #555555;
+  font-size: 90%;
+  font-family: $slab-serif;
+  line-height: 1.5em;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  quotes: inherit;
+  .open-quote {
+    @extend .big_quote_marks;
+    content: open-quote;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+  .close-quote {
+    @extend .big_quote_marks;
+    content: close-quote;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+}
+
+.testimonials-widget-testimonials .credit {    
+  color: #CCCCCC;
+  font-family: $sans-serif;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 5px;
+  .author, .location {
+    display: inline-block;
+    }
+}
+.testimonials-widget-testimonials .credit:before {
+  content: "~";
+}
+
+
+
+
+/* Yelp Link */
+.yelp_link {
+  background: url("../images/icon_yelp.png") no-repeat scroll 0 0 white;
+  color: #991605;
+  display: block;
+  font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+  line-height: 18px;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-top: 20px;
+  padding-left: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.yelp_link:hover {
+  text-decoration: underline;
+  color: #991605;
+}
